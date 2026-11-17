@@ -1,0 +1,1780 @@
+[
+ {
+  "nome": "sair-da-piscina-touca-rosa",
+  "origem": "o:IMG_2949",
+  "alt": "Nadador do CNO com a touca rosa do clube a sair da piscina pela escada",
+  "credito": "AmoNadar",
+  "recortes": [
+   {
+    "proporcao": "3:2",
+    "tamanhos": [
+     {
+      "w": 480,
+      "h": 320
+     },
+     {
+      "w": 960,
+      "h": 640
+     },
+     {
+      "w": 1500,
+      "h": 1000
+     }
+    ]
+   },
+   {
+    "proporcao": "4:5",
+    "tamanhos": [
+     {
+      "w": 480,
+      "h": 600
+     },
+     {
+      "w": 960,
+      "h": 1200
+     }
+    ]
+   },
+   {
+    "proporcao": "1:1",
+    "tamanhos": [
+     {
+      "w": 480,
+      "h": 480
+     },
+     {
+      "w": 960,
+      "h": 960
+     },
+     {
+      "w": 1200,
+      "h": 1200
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "nome": "bloco-touca-branca",
+  "origem": "o:IMG_2952",
+  "alt": "Nadador sentado no bloco de partida, concentrado antes da prova",
+  "credito": "AmoNadar",
+  "recortes": [
+   {
+    "proporcao": "1:1",
+    "tamanhos": [
+     {
+      "w": 480,
+      "h": 480
+     },
+     {
+      "w": 960,
+      "h": 960
+     },
+     {
+      "w": 1500,
+      "h": 1500
+     }
+    ]
+   },
+   {
+    "proporcao": "4:5",
+    "tamanhos": [
+     {
+      "w": 480,
+      "h": 600
+     },
+     {
+      "w": 960,
+      "h": 1200
+     },
+     {
+      "w": 1200,
+      "h": 1500
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "nome": "concentracao-touca-rosa",
+  "origem": "o:IMG_2953",
+  "alt": "Nadador com a touca rosa do CNO de cabeça baixa, a concentrar-se antes da prova",
+  "credito": "AmoNadar",
+  "recortes": [
+   {
+    "proporcao": "1:1",
+    "tamanhos": [
+     {
+      "w": 480,
+      "h": 480
+     },
+     {
+      "w": 960,
+      "h": 960
+     },
+     {
+      "w": 1500,
+      "h": 1500
+     }
+    ]
+   },
+   {
+    "proporcao": "4:5",
+    "tamanhos": [
+     {
+      "w": 480,
+      "h": 600
+     },
+     {
+      "w": 960,
+      "h": 1200
+     },
+     {
+      "w": 1200,
+      "h": 1500
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "nome": "mariposa-salpicos",
+  "origem": "o:IMG_6783",
+  "alt": "Nadador de mariposa com a touca rosa do clube entre salpicos de água",
+  "credito": "AmoNadar",
+  "recortes": [
+   {
+    "proporcao": "1:1",
+    "tamanhos": [
+     {
+      "w": 480,
+      "h": 480
+     },
+     {
+      "w": 960,
+      "h": 961
+     },
+     {
+      "w": 1125,
+      "h": 1126
+     }
+    ]
+   },
+   {
+    "proporcao": "4:5",
+    "tamanhos": [
+     {
+      "w": 480,
+      "h": 600
+     },
+     {
+      "w": 901,
+      "h": 1126
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "nome": "retrato-touca-rosa",
+  "origem": "o:IMG_2947",
+  "alt": "Retrato de um nadador com a touca rosa do CNO e os óculos na testa",
+  "credito": "AmoNadar",
+  "recortes": [
+   {
+    "proporcao": "3:2",
+    "tamanhos": [
+     {
+      "w": 480,
+      "h": 320
+     },
+     {
+      "w": 960,
+      "h": 640
+     },
+     {
+      "w": 1500,
+      "h": 1000
+     }
+    ]
+   },
+   {
+    "proporcao": "4:5",
+    "tamanhos": [
+     {
+      "w": 480,
+      "h": 600
+     },
+     {
+      "w": 800,
+      "h": 1000
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "nome": "bandeira-historica",
+  "origem": "o:IMG_2944",
+  "alt": "A bandeira antiga do Clube de Natação de Olhão e uma fotografia de equipa antiga",
+  "credito": null,
+  "recortes": [
+   {
+    "proporcao": "1:1",
+    "tamanhos": [
+     {
+      "w": 480,
+      "h": 480
+     },
+     {
+      "w": 960,
+      "h": 960
+     },
+     {
+      "w": 1542,
+      "h": 1542
+     }
+    ]
+   },
+   {
+    "proporcao": "4:5",
+    "tamanhos": [
+     {
+      "w": 480,
+      "h": 600
+     },
+     {
+      "w": 960,
+      "h": 1200
+     },
+     {
+      "w": 1542,
+      "h": 1928
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "nome": "touca-antiga",
+  "origem": "o:IMG_2946",
+  "alt": "Touca rosa antiga com o logótipo e o nome C. N. Olhão",
+  "credito": null,
+  "recortes": [
+   {
+    "proporcao": "1:1",
+    "tamanhos": [
+     {
+      "w": 480,
+      "h": 480
+     },
+     {
+      "w": 960,
+      "h": 960
+     },
+     {
+      "w": 1153,
+      "h": 1153
+     }
+    ]
+   },
+   {
+    "proporcao": "4:5",
+    "tamanhos": [
+     {
+      "w": 480,
+      "h": 600
+     },
+     {
+      "w": 960,
+      "h": 1200
+     },
+     {
+      "w": 1153,
+      "h": 1441
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "nome": "celebracao-trofeus",
+  "origem": "o:IMG_2945",
+  "alt": "Atletas, famílias e treinadores reunidos numa celebração do clube com os troféus conquistados",
+  "credito": null,
+  "recortes": [
+   {
+    "proporcao": "3:2",
+    "tamanhos": [
+     {
+      "w": 480,
+      "h": 320
+     },
+     {
+      "w": 960,
+      "h": 640
+     },
+     {
+      "w": 1500,
+      "h": 1000
+     }
+    ]
+   },
+   {
+    "proporcao": "16:9",
+    "tamanhos": [
+     {
+      "w": 480,
+      "h": 270
+     },
+     {
+      "w": 960,
+      "h": 540
+     },
+     {
+      "w": 1500,
+      "h": 844
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "nome": "trofeu-regional-infantis-2026",
+  "origem": "o:IMG_2934",
+  "alt": "Troféu de 1.º lugar por equipas no Campeonato Regional de Infantis, Loulé 2026",
+  "credito": null,
+  "recortes": [
+   {
+    "proporcao": "4:5",
+    "tamanhos": [
+     {
+      "w": 480,
+      "h": 601
+     },
+     {
+      "w": 924,
+      "h": 1156
+     }
+    ]
+   },
+   {
+    "proporcao": "1:1",
+    "tamanhos": [
+     {
+      "w": 480,
+      "h": 480
+     },
+     {
+      "w": 924,
+      "h": 924
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "nome": "podio-regional",
+  "origem": "o:IMG_2933",
+  "alt": "Pódio de um campeonato regional na piscina de Loulé",
+  "credito": "Alexandra Hoesen Photo",
+  "recortes": [
+   {
+    "proporcao": "3:2",
+    "tamanhos": [
+     {
+      "w": 480,
+      "h": 320
+     },
+     {
+      "w": 960,
+      "h": 640
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "nome": "podio-loule",
+  "origem": "o:IMG_2948",
+  "alt": "Nadador do CNO no lugar mais alto do pódio em Loulé",
+  "credito": "AmoNadar",
+  "recortes": [
+   {
+    "proporcao": "3:2",
+    "tamanhos": [
+     {
+      "w": 480,
+      "h": 320
+     },
+     {
+      "w": 960,
+      "h": 640
+     },
+     {
+      "w": 1500,
+      "h": 1000
+     }
+    ]
+   },
+   {
+    "proporcao": "4:3",
+    "tamanhos": [
+     {
+      "w": 480,
+      "h": 360
+     },
+     {
+      "w": 960,
+      "h": 719
+     },
+     {
+      "w": 1500,
+      "h": 1124
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "nome": "podio-estafetas",
+  "origem": "o:IMG_2950",
+  "alt": "Equipas de estafetas com as medalhas ao peito num pódio ao ar livre",
+  "credito": null,
+  "recortes": [
+   {
+    "proporcao": "3:2",
+    "tamanhos": [
+     {
+      "w": 480,
+      "h": 320
+     },
+     {
+      "w": 960,
+      "h": 640
+     },
+     {
+      "w": 1600,
+      "h": 1067
+     }
+    ]
+   },
+   {
+    "proporcao": "16:9",
+    "tamanhos": [
+     {
+      "w": 480,
+      "h": 270
+     },
+     {
+      "w": 960,
+      "h": 540
+     },
+     {
+      "w": 1600,
+      "h": 900
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "nome": "atleta-nacionais-fpn",
+  "origem": "o:IMG_2931",
+  "alt": "Atleta do CNO com a medalha nos Campeonatos Nacionais da Federação Portuguesa de Natação",
+  "credito": null,
+  "recortes": [
+   {
+    "proporcao": "4:5",
+    "tamanhos": [
+     {
+      "w": 480,
+      "h": 600
+     },
+     {
+      "w": 960,
+      "h": 1200
+     },
+     {
+      "w": 1152,
+      "h": 1440
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "nome": "nacional-juniores-bloco",
+  "origem": "o:IMG_1721",
+  "alt": "Nadador com a touca rosa a subir ao bloco no Campeonato Nacional de Juniores e Juvenis",
+  "credito": null,
+  "recortes": [
+   {
+    "proporcao": "4:5",
+    "tamanhos": [
+     {
+      "w": 480,
+      "h": 600
+     },
+     {
+      "w": 960,
+      "h": 1200
+     },
+     {
+      "w": 1320,
+      "h": 1650
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "nome": "open-lisboa",
+  "origem": "o:IMG_0717",
+  "alt": "Nadador do CNO no bloco de partida no Lisbon International Meeting",
+  "credito": null,
+  "recortes": [
+   {
+    "proporcao": "3:2",
+    "tamanhos": [
+     {
+      "w": 480,
+      "h": 320
+     },
+     {
+      "w": 960,
+      "h": 640
+     },
+     {
+      "w": 1600,
+      "h": 1067
+     },
+     {
+      "w": 2268,
+      "h": 1512
+     }
+    ]
+   },
+   {
+    "proporcao": "4:5",
+    "tamanhos": [
+     {
+      "w": 480,
+      "h": 600
+     },
+     {
+      "w": 960,
+      "h": 1200
+     },
+     {
+      "w": 1600,
+      "h": 2000
+     },
+     {
+      "w": 2268,
+      "h": 2835
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "nome": "chegada-prova",
+  "origem": "o:IMG_0751",
+  "alt": "Nadadores com as toucas rosa do clube na água no fim de uma prova",
+  "credito": null,
+  "recortes": [
+   {
+    "proporcao": "1:1",
+    "tamanhos": [
+     {
+      "w": 480,
+      "h": 480
+     },
+     {
+      "w": 960,
+      "h": 960
+     },
+     {
+      "w": 1600,
+      "h": 1600
+     },
+     {
+      "w": 2268,
+      "h": 2268
+     }
+    ]
+   },
+   {
+    "proporcao": "4:5",
+    "tamanhos": [
+     {
+      "w": 480,
+      "h": 600
+     },
+     {
+      "w": 960,
+      "h": 1200
+     },
+     {
+      "w": 1600,
+      "h": 2000
+     },
+     {
+      "w": 2268,
+      "h": 2835
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "nome": "partida-exterior",
+  "origem": "o:IMG_1501",
+  "alt": "Nadadores nos blocos de partida numa piscina ao ar livre",
+  "credito": null,
+  "recortes": [
+   {
+    "proporcao": "4:5",
+    "tamanhos": [
+     {
+      "w": 480,
+      "h": 600
+     },
+     {
+      "w": 960,
+      "h": 1200
+     },
+     {
+      "w": 1365,
+      "h": 1706
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "nome": "preparacao-touca-rosa",
+  "origem": "o:IMG_0044",
+  "alt": "Nadador a ajustar a touca rosa e os óculos antes de entrar na água",
+  "credito": null,
+  "recortes": [
+   {
+    "proporcao": "4:5",
+    "tamanhos": [
+     {
+      "w": 480,
+      "h": 600
+     },
+     {
+      "w": 960,
+      "h": 1200
+     },
+     {
+      "w": 1600,
+      "h": 2000
+     },
+     {
+      "w": 2400,
+      "h": 3000
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "nome": "dupla-touca-rosa",
+  "origem": "o:IMG_2932",
+  "alt": "Dois nadadores do CNO com as toucas rosa, sorridentes, numa piscina ao ar livre",
+  "credito": null,
+  "recortes": [
+   {
+    "proporcao": "4:5",
+    "tamanhos": [
+     {
+      "w": 480,
+      "h": 600
+     },
+     {
+      "w": 960,
+      "h": 1200
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "nome": "equipa-absolutos-tecnicos",
+  "origem": "o:IMG_2942",
+  "alt": "Equipa de absolutos do CNO e equipa técnica junto à piscina coberta",
+  "credito": null,
+  "recortes": [
+   {
+    "proporcao": "16:9",
+    "tamanhos": [
+     {
+      "w": 480,
+      "h": 270
+     },
+     {
+      "w": 960,
+      "h": 540
+     },
+     {
+      "w": 1600,
+      "h": 900
+     }
+    ]
+   },
+   {
+    "proporcao": "3:2",
+    "tamanhos": [
+     {
+      "w": 480,
+      "h": 320
+     },
+     {
+      "w": 960,
+      "h": 640
+     },
+     {
+      "w": 1600,
+      "h": 1067
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "nome": "equipa-absolutos-tecnicos-vertical",
+  "origem": "o:IMG_2943",
+  "alt": "Equipa de absolutos do CNO e equipa técnica junto à piscina coberta",
+  "credito": null,
+  "recortes": [
+   {
+    "proporcao": "1:1",
+    "tamanhos": [
+     {
+      "w": 480,
+      "h": 480
+     },
+     {
+      "w": 736,
+      "h": 736
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "nome": "equipa-absolutos-madeira",
+  "origem": "o:IMG_2959",
+  "alt": "Nadadores do CNO junto à piscina, numa nave com teto de madeira",
+  "credito": null,
+  "recortes": [
+   {
+    "proporcao": "16:9",
+    "tamanhos": [
+     {
+      "w": 480,
+      "h": 270
+     },
+     {
+      "w": 960,
+      "h": 540
+     },
+     {
+      "w": 1600,
+      "h": 900
+     }
+    ]
+   },
+   {
+    "proporcao": "3:2",
+    "tamanhos": [
+     {
+      "w": 480,
+      "h": 320
+     },
+     {
+      "w": 960,
+      "h": 640
+     },
+     {
+      "w": 1600,
+      "h": 1067
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "nome": "equipa-piscina-madeira",
+  "origem": "o:IMG_2937",
+  "alt": "Grupo de nadadores do CNO sorridentes junto à piscina",
+  "credito": null,
+  "recortes": [
+   {
+    "proporcao": "3:2",
+    "tamanhos": [
+     {
+      "w": 480,
+      "h": 320
+     },
+     {
+      "w": 960,
+      "h": 640
+     },
+     {
+      "w": 1600,
+      "h": 1067
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "nome": "equipa-infantis",
+  "origem": "o:IMG_2941",
+  "alt": "Equipa de infantis do CNO com as t-shirts azuis do clube",
+  "credito": null,
+  "recortes": [
+   {
+    "proporcao": "3:2",
+    "tamanhos": [
+     {
+      "w": 480,
+      "h": 320
+     },
+     {
+      "w": 960,
+      "h": 639
+     },
+     {
+      "w": 1600,
+      "h": 1066
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "nome": "equipa-piscina-exterior",
+  "origem": "o:IMG_2936",
+  "alt": "Equipa do CNO com um troféu junto a uma piscina ao ar livre",
+  "credito": null,
+  "recortes": [
+   {
+    "proporcao": "3:2",
+    "tamanhos": [
+     {
+      "w": 480,
+      "h": 320
+     },
+     {
+      "w": 960,
+      "h": 640
+     },
+     {
+      "w": 1536,
+      "h": 1024
+     }
+    ]
+   },
+   {
+    "proporcao": "4:5",
+    "tamanhos": [
+     {
+      "w": 480,
+      "h": 600
+     },
+     {
+      "w": 960,
+      "h": 1200
+     },
+     {
+      "w": 1536,
+      "h": 1920
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "nome": "equipa-trofeu-exterior",
+  "origem": "o:IMG_2935",
+  "alt": "Equipa jovem do CNO a celebrar com um troféu",
+  "credito": null,
+  "recortes": [
+   {
+    "proporcao": "1:1",
+    "tamanhos": [
+     {
+      "w": 480,
+      "h": 480
+     },
+     {
+      "w": 960,
+      "h": 960
+     },
+     {
+      "w": 1200,
+      "h": 1200
+     }
+    ]
+   },
+   {
+    "proporcao": "4:5",
+    "tamanhos": [
+     {
+      "w": 480,
+      "h": 600
+     },
+     {
+      "w": 960,
+      "h": 1200
+     },
+     {
+      "w": 1200,
+      "h": 1500
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "nome": "equipa-palmeiras",
+  "origem": "o:IMG_2939",
+  "alt": "Equipa do CNO com os fatos de treino do clube, debaixo das palmeiras",
+  "credito": null,
+  "recortes": [
+   {
+    "proporcao": "3:2",
+    "tamanhos": [
+     {
+      "w": 480,
+      "h": 320
+     },
+     {
+      "w": 960,
+      "h": 640
+     },
+     {
+      "w": 1536,
+      "h": 1024
+     }
+    ]
+   },
+   {
+    "proporcao": "4:5",
+    "tamanhos": [
+     {
+      "w": 480,
+      "h": 600
+     },
+     {
+      "w": 960,
+      "h": 1200
+     },
+     {
+      "w": 1536,
+      "h": 1920
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "nome": "equipa-noite-tecnicos",
+  "origem": "o:IMG_2956",
+  "alt": "Equipa do CNO e treinadores com os fatos de treino do clube, à noite",
+  "credito": null,
+  "recortes": [
+   {
+    "proporcao": "1:1",
+    "tamanhos": [
+     {
+      "w": 480,
+      "h": 480
+     },
+     {
+      "w": 720,
+      "h": 720
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "nome": "equipa-piscina-amarela",
+  "origem": "o:IMG_2958",
+  "alt": "Grande grupo de nadadores do CNO numa piscina coberta",
+  "credito": null,
+  "recortes": [
+   {
+    "proporcao": "1:1",
+    "tamanhos": [
+     {
+      "w": 480,
+      "h": 480
+     },
+     {
+      "w": 720,
+      "h": 720
+     }
+    ]
+   },
+   {
+    "proporcao": "4:5",
+    "tamanhos": [
+     {
+      "w": 480,
+      "h": 600
+     },
+     {
+      "w": 720,
+      "h": 900
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "nome": "equipa-blocos-exterior",
+  "origem": "o:IMG_1468",
+  "alt": "Quatro nadadores do CNO nos blocos de partida de uma piscina ao ar livre",
+  "credito": null,
+  "recortes": [
+   {
+    "proporcao": "4:5",
+    "tamanhos": [
+     {
+      "w": 480,
+      "h": 600
+     },
+     {
+      "w": 960,
+      "h": 1200
+     },
+     {
+      "w": 1600,
+      "h": 2000
+     },
+     {
+      "w": 2400,
+      "h": 3000
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "nome": "seniores-estagio",
+  "origem": "o:IMG_1197",
+  "alt": "Grupo de nadadores seniores do CNO num relvado, num dia de sol",
+  "credito": null,
+  "recortes": [
+   {
+    "proporcao": "3:2",
+    "tamanhos": [
+     {
+      "w": 480,
+      "h": 320
+     },
+     {
+      "w": 960,
+      "h": 640
+     },
+     {
+      "w": 1600,
+      "h": 1067
+     },
+     {
+      "w": 2400,
+      "h": 1600
+     }
+    ]
+   },
+   {
+    "proporcao": "4:5",
+    "tamanhos": [
+     {
+      "w": 480,
+      "h": 600
+     },
+     {
+      "w": 960,
+      "h": 1200
+     },
+     {
+      "w": 1600,
+      "h": 2000
+     },
+     {
+      "w": 2400,
+      "h": 3000
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "nome": "equipa-cno-pintado",
+  "origem": "o:IMG_0270",
+  "alt": "Nadadores do CNO com 'CNO' pintado no peito, sorridentes",
+  "credito": null,
+  "recortes": [
+   {
+    "proporcao": "3:2",
+    "tamanhos": [
+     {
+      "w": 480,
+      "h": 320
+     },
+     {
+      "w": 960,
+      "h": 640
+     },
+     {
+      "w": 1600,
+      "h": 1067
+     },
+     {
+      "w": 2048,
+      "h": 1366
+     }
+    ]
+   },
+   {
+    "proporcao": "4:5",
+    "tamanhos": [
+     {
+      "w": 480,
+      "h": 600
+     },
+     {
+      "w": 960,
+      "h": 1200
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "nome": "cno-nas-costas",
+  "origem": "o:470a26ef-6f80-4a74-b1e0-da724dcd8ba8",
+  "alt": "Nadadores com 'CNO' escrito nas costas, em ambiente de competição",
+  "credito": null,
+  "recortes": [
+   {
+    "proporcao": "3:2",
+    "tamanhos": [
+     {
+      "w": 480,
+      "h": 320
+     },
+     {
+      "w": 960,
+      "h": 640
+     },
+     {
+      "w": 1600,
+      "h": 1067
+     },
+     {
+      "w": 2048,
+      "h": 1366
+     }
+    ]
+   },
+   {
+    "proporcao": "4:5",
+    "tamanhos": [
+     {
+      "w": 480,
+      "h": 600
+     },
+     {
+      "w": 960,
+      "h": 1200
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "nome": "seniores-relvado",
+  "origem": "o:1d2b59bf-41b4-4b6e-89db-505eb9a5c9b9",
+  "alt": "Cinco nadadores do CNO de fato de banho num relvado",
+  "credito": null,
+  "recortes": [
+   {
+    "proporcao": "4:3",
+    "tamanhos": [
+     {
+      "w": 480,
+      "h": 359
+     },
+     {
+      "w": 772,
+      "h": 578
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "nome": "viagem-carrinha",
+  "origem": "o:IMG_2955",
+  "alt": "Nadadores do CNO junto à carrinha numa viagem para uma prova",
+  "credito": null,
+  "recortes": [
+   {
+    "proporcao": "4:5",
+    "tamanhos": [
+     {
+      "w": 480,
+      "h": 600
+     },
+     {
+      "w": 960,
+      "h": 1200
+     },
+     {
+      "w": 1152,
+      "h": 1440
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "nome": "complexo-leiria",
+  "origem": "o:IMG_2940",
+  "alt": "Dois nadadores do CNO à entrada do Complexo Municipal de Piscinas de Leiria",
+  "credito": null,
+  "recortes": [
+   {
+    "proporcao": "4:5",
+    "tamanhos": [
+     {
+      "w": 480,
+      "h": 600
+     },
+     {
+      "w": 960,
+      "h": 1200
+     },
+     {
+      "w": 1536,
+      "h": 1920
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "nome": "torremolinos-bancada",
+  "origem": "o:IMG_2954",
+  "alt": "Dois nadadores do CNO a ver as provas na piscina de Torremolinos",
+  "credito": null,
+  "recortes": [
+   {
+    "proporcao": "16:9",
+    "tamanhos": [
+     {
+      "w": 480,
+      "h": 270
+     },
+     {
+      "w": 960,
+      "h": 540
+     },
+     {
+      "w": 1599,
+      "h": 899
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "nome": "jantar-clube",
+  "origem": "o:IMG_2930",
+  "alt": "Jantar do clube com atletas, famílias e treinadores",
+  "credito": null,
+  "recortes": [
+   {
+    "proporcao": "16:9",
+    "tamanhos": [
+     {
+      "w": 480,
+      "h": 270
+     },
+     {
+      "w": 960,
+      "h": 540
+     },
+     {
+      "w": 1600,
+      "h": 900
+     },
+     {
+      "w": 1864,
+      "h": 1049
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "nome": "almoco-equipa",
+  "origem": "o:IMG_2938",
+  "alt": "Atletas do CNO a almoçar juntos numa deslocação",
+  "credito": null,
+  "recortes": [
+   {
+    "proporcao": "4:5",
+    "tamanhos": [
+     {
+      "w": 480,
+      "h": 600
+     },
+     {
+      "w": 960,
+      "h": 1200
+     },
+     {
+      "w": 1536,
+      "h": 1920
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "nome": "convivio-campeonato",
+  "origem": "o:IMG_2951",
+  "alt": "Três nadadores do CNO bem-dispostos num campeonato ao ar livre",
+  "credito": null,
+  "recortes": [
+   {
+    "proporcao": "4:5",
+    "tamanhos": [
+     {
+      "w": 480,
+      "h": 600
+     },
+     {
+      "w": 736,
+      "h": 920
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "nome": "pistas-detalhe",
+  "origem": "f:pistas-detalhe",
+  "alt": "Pistas de competição vermelhas e brancas sobre a água azul",
+  "credito": "Virgílio Afonso Photography / Algarve a Nadar",
+  "recortes": [
+   {
+    "proporcao": "3:2",
+    "tamanhos": [
+     {
+      "w": 480,
+      "h": 320
+     },
+     {
+      "w": 960,
+      "h": 640
+     },
+     {
+      "w": 1600,
+      "h": 1067
+     },
+     {
+      "w": 1944,
+      "h": 1296
+     }
+    ]
+   },
+   {
+    "proporcao": "16:9",
+    "tamanhos": [
+     {
+      "w": 480,
+      "h": 270
+     },
+     {
+      "w": 960,
+      "h": 540
+     },
+     {
+      "w": 1600,
+      "h": 900
+     },
+     {
+      "w": 1944,
+      "h": 1094
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "nome": "toucas-rosa-na-agua",
+  "origem": "f:toucas-rosa-na-agua",
+  "alt": "Várias nadadoras com as toucas rosa do CNO dentro de água",
+  "credito": "Virgílio Afonso Photography / Algarve a Nadar",
+  "recortes": [
+   {
+    "proporcao": "3:2",
+    "tamanhos": [
+     {
+      "w": 480,
+      "h": 320
+     },
+     {
+      "w": 960,
+      "h": 640
+     },
+     {
+      "w": 1600,
+      "h": 1067
+     },
+     {
+      "w": 2010,
+      "h": 1340
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "nome": "estafeta-celebracao",
+  "origem": "f:estafeta-celebracao",
+  "alt": "Nadadores a festejar na borda da piscina durante uma estafeta",
+  "credito": "Virgílio Afonso Photography / Algarve a Nadar",
+  "recortes": [
+   {
+    "proporcao": "3:2",
+    "tamanhos": [
+     {
+      "w": 480,
+      "h": 320
+     },
+     {
+      "w": 960,
+      "h": 640
+     },
+     {
+      "w": 1600,
+      "h": 1067
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "nome": "crol-lateral",
+  "origem": "f:crol-lateral-1",
+  "alt": "Nadadora de crol com a touca rosa do clube",
+  "credito": "Luís Mestre / Algarve a Nadar",
+  "recortes": [
+   {
+    "proporcao": "3:2",
+    "tamanhos": [
+     {
+      "w": 480,
+      "h": 320
+     },
+     {
+      "w": 960,
+      "h": 640
+     },
+     {
+      "w": 1600,
+      "h": 1067
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "nome": "crol-perto",
+  "origem": "f:crol-perto-3",
+  "alt": "Grande plano de um nadador de crol com a touca rosa",
+  "credito": "Virgílio Afonso Photography / Algarve a Nadar",
+  "recortes": [
+   {
+    "proporcao": "3:2",
+    "tamanhos": [
+     {
+      "w": 480,
+      "h": 320
+     },
+     {
+      "w": 960,
+      "h": 640
+     },
+     {
+      "w": 1600,
+      "h": 1067
+     },
+     {
+      "w": 1944,
+      "h": 1296
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "nome": "mariposa-touca-rosa",
+  "origem": "f:mariposa-touca-rosa",
+  "alt": "Nadadora de mariposa com a touca rosa do CNO",
+  "credito": "Virgílio Afonso Photography / Algarve a Nadar",
+  "recortes": [
+   {
+    "proporcao": "3:2",
+    "tamanhos": [
+     {
+      "w": 480,
+      "h": 320
+     },
+     {
+      "w": 960,
+      "h": 640
+     },
+     {
+      "w": 1600,
+      "h": 1067
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "nome": "crol-touca-rosa",
+  "origem": "f:crol-touca-rosa",
+  "alt": "Nadador de crol com a touca rosa entre as pistas",
+  "credito": "Virgílio Afonso Photography / Algarve a Nadar",
+  "recortes": [
+   {
+    "proporcao": "3:2",
+    "tamanhos": [
+     {
+      "w": 480,
+      "h": 320
+     },
+     {
+      "w": 960,
+      "h": 640
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "nome": "toucas-rosa-na-parede",
+  "origem": "f:toucas-rosa-na-parede",
+  "alt": "Nadadores com as toucas rosa do clube agarrados à parede da piscina",
+  "credito": "Virgílio Afonso Photography / Algarve a Nadar",
+  "recortes": [
+   {
+    "proporcao": "3:2",
+    "tamanhos": [
+     {
+      "w": 480,
+      "h": 320
+     },
+     {
+      "w": 960,
+      "h": 640
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "nome": "equipa-toucas-de-costas",
+  "origem": "f:equipa-toucas-de-costas",
+  "alt": "Nadadoras do CNO de costas, com as toucas rosa do clube",
+  "credito": "Virgílio Afonso Photography / Algarve a Nadar",
+  "recortes": [
+   {
+    "proporcao": "3:2",
+    "tamanhos": [
+     {
+      "w": 480,
+      "h": 320
+     },
+     {
+      "w": 750,
+      "h": 500
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "nome": "equipa-2019",
+  "origem": "f:equipa-2019-capa",
+  "alt": "Equipa do Clube Natação de Olhão em 2019, com as t-shirts azuis do clube",
+  "credito": "Luís Mestre / Algarve a Nadar",
+  "recortes": [
+   {
+    "proporcao": "3:2",
+    "tamanhos": [
+     {
+      "w": 480,
+      "h": 320
+     },
+     {
+      "w": 714,
+      "h": 476
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "nome": "brucos-touca-rosa",
+  "origem": "f:brucos-touca-rosa",
+  "alt": "Nadadora de bruços com a touca rosa do clube",
+  "credito": "Virgílio Afonso Photography / Algarve a Nadar",
+  "recortes": [
+   {
+    "proporcao": "3:2",
+    "tamanhos": [
+     {
+      "w": 480,
+      "h": 320
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "nome": "crol-pista-1",
+  "origem": "f:crol-pista-1",
+  "alt": "Nadador de crol entre as pistas",
+  "credito": "Virgílio Afonso Photography / Algarve a Nadar",
+  "recortes": [
+   {
+    "proporcao": "3:2",
+    "tamanhos": [
+     {
+      "w": 480,
+      "h": 320
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "nome": "crol-pista-2",
+  "origem": "f:crol-pista-2",
+  "alt": "Nadador de crol a respirar entre as pistas",
+  "credito": "Virgílio Afonso Photography / Algarve a Nadar",
+  "recortes": [
+   {
+    "proporcao": "3:2",
+    "tamanhos": [
+     {
+      "w": 480,
+      "h": 320
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "nome": "mariposa-frente",
+  "origem": "f:mariposa-frente-1",
+  "alt": "Nadador de mariposa visto de frente",
+  "credito": "Virgílio Afonso Photography / Algarve a Nadar",
+  "recortes": [
+   {
+    "proporcao": "3:2",
+    "tamanhos": [
+     {
+      "w": 480,
+      "h": 320
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "nome": "mariposa-salpicos-fb",
+  "origem": "f:mariposa-salpicos",
+  "alt": "Nadador de mariposa entre salpicos",
+  "credito": "Virgílio Afonso Photography / Algarve a Nadar",
+  "recortes": [
+   {
+    "proporcao": "3:2",
+    "tamanhos": [
+     {
+      "w": 480,
+      "h": 320
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "nome": "mariposa-touca-branca",
+  "origem": "f:mariposa-touca-branca",
+  "alt": "Nadador de mariposa com touca branca",
+  "credito": "Virgílio Afonso Photography / Algarve a Nadar",
+  "recortes": [
+   {
+    "proporcao": "3:2",
+    "tamanhos": [
+     {
+      "w": 480,
+      "h": 320
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "nome": "medalhas",
+  "origem": "f:medalhas",
+  "alt": "Medalhas com fitas verdes e vermelhas sobre uma mesa",
+  "credito": "Virgílio Afonso Photography / Algarve a Nadar",
+  "recortes": [
+   {
+    "proporcao": "3:2",
+    "tamanhos": [
+     {
+      "w": 480,
+      "h": 320
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "nome": "salto-de-partida",
+  "origem": "f:salto-de-partida",
+  "alt": "Nadador a saltar do bloco de partida",
+  "credito": "Virgílio Afonso Photography / Algarve a Nadar",
+  "recortes": [
+   {
+    "proporcao": "3:2",
+    "tamanhos": [
+     {
+      "w": 480,
+      "h": 320
+     }
+    ]
+   }
+  ]
+ }
+]
