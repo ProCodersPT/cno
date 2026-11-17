@@ -242,7 +242,7 @@
     gsap.from(".olympian__board .board__row", { x: 40, opacity: 0, duration: 1, stagger: .12, ease: "expo.out", scrollTrigger: { trigger: ".olympian__board", start: "top 75%" } });
     gsap.from(".olympian__title", { y: 60, opacity: 0, duration: 1.3, ease: "expo.out", scrollTrigger: { trigger: ".olympian", start: "top 75%" } });
     $$(".js-scramble").forEach(el => ScrollTrigger.create({ trigger: el, start: "top 80%", once: true, onEnter: () => scramble(el) }));
-    gsap.from(".staff__list li span", { yPercent: 110, duration: 1.1, stagger: .08, ease: "expo.out", scrollTrigger: { trigger: ".staff__list", start: "top 80%" } });
+    gsap.from(".staff__rise", { yPercent: 110, duration: 1.1, stagger: .08, ease: "expo.out", scrollTrigger: { trigger: ".staff__list", start: "top 80%" } });
     gsap.from(".staff__photo", { clipPath: "inset(0 100% 0 0 round 22px)", duration: 1.6, ease: "expo.inOut", scrollTrigger: { trigger: ".staff", start: "top 75%" } });
 
     /* bento */

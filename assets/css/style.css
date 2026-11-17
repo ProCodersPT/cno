@@ -318,8 +318,11 @@ em { font-family: var(--f-serif); font-style: italic; font-weight: 400; letter-s
 .staff__list { list-style: none; margin: 0; padding: 0; }
 .staff__list li { border-top: 1px solid rgba(11, 16, 35, .15); padding: 18px 0; font: 650 clamp(24px, 2.6vw, 38px)/1.25 var(--f-display); letter-spacing: -.03em; overflow: hidden; }
 .staff__list li:last-child { border-bottom: 1px solid rgba(11, 16, 35, .15); }
-.staff__list li span { display: inline-block; transition: transform .6s var(--ease), color .3s; }
-.staff__list li:hover span { transform: translateX(14px); color: var(--pink); }
+/* two layers on purpose: GSAP raises .staff__rise, the hover moves .staff__name.
+   A CSS transition on an element GSAP also transforms leaves it stuck off its line. */
+.staff__rise, .staff__name { display: inline-block; }
+.staff__name { transition: transform .6s var(--ease), color .3s; }
+.staff__list li:hover .staff__name { transform: translateX(14px); color: var(--pink); }
 
 /* ----------------------------------------------------------------- honours */
 .honours { padding: clamp(120px, 14vw, 200px) 0; background: var(--night); }
