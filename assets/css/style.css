@@ -52,7 +52,7 @@ em { font-family: var(--f-serif); font-style: italic; font-weight: 400; letter-s
 .eyebrow {
   display: flex; align-items: center; gap: 12px;
   margin: 0 0 28px;
-  font: 600 12px/1 var(--f-body); letter-spacing: .18em; text-transform: uppercase;
+  font: 600 18px/1 var(--f-body); letter-spacing: .14em; text-transform: uppercase;
   color: var(--aqua);
 }
 .eyebrow .num { color: var(--pink); font-variant-numeric: tabular-nums; }
@@ -241,26 +241,40 @@ em { font-family: var(--f-serif); font-style: italic; font-weight: 400; letter-s
 /* ----------------------------------------------------------------- manifesto */
 .manifesto { position: relative; padding: clamp(120px, 18vw, 240px) 0 clamp(120px, 16vw, 220px); }
 .manifesto .wrap { position: relative; z-index: 2; }
+/* Each sentence stays on one line: the size follows the width of the longest one
+   (30em). On phones the last sentence breaks at its comma (br.m), so the longest is 20.7em. */
 .manifesto__text {
-  margin: 0; max-width: 1180px;
-  font: 600 clamp(30px, 4.3vw, 66px)/1.12 var(--f-display); letter-spacing: -.03em;
+  margin: 0; white-space: nowrap;
+  font: 600 min(66px, calc((min(100vw, var(--max)) - 2 * var(--pad)) / 30.6))/1.16 var(--f-display); letter-spacing: -.03em;
+}
+.manifesto__text br.m { display: none; }
+.manifesto__intro { margin: 0; max-width: 820px; font: 500 clamp(17px, 2.2vw, 30px)/1.45 var(--f-body); color: var(--paper); text-wrap: pretty; }
+.manifesto__founded { margin: 22px 0 clamp(56px, 7vw, 96px); font: italic 400 clamp(18px, 1.8vw, 24px)/1.35 var(--f-serif); color: var(--aqua); }
+.manifesto__founded::before { content: ""; display: inline-block; vertical-align: middle; width: 28px; height: 2px; margin-right: 12px; background: var(--pink); }
+@media (max-width: 600px) {
+  .manifesto__text { font-size: calc((100vw - 2 * var(--pad)) / 20.9); }
+  .manifesto__text br.m { display: inline; }
 }
 .manifesto__text .w { color: rgba(243, 240, 232, .16); transition: color .2s; }
 .manifesto__text .w.on { color: var(--paper); }
-.manifesto__sign { margin: 40px 0 0; font-family: var(--f-serif); font-style: italic; font-size: 22px; color: var(--aqua); }
-.manifesto__pics { position: absolute; inset: 0; pointer-events: none; }
-.pic { position: absolute; border-radius: 18px; overflow: hidden; box-shadow: 0 40px 80px -30px rgba(0, 0, 0, .7); }
-.pic--a { width: min(22vw, 320px); right: 4vw; top: 10%; aspect-ratio: 4/5; opacity: .9; }
-@media (min-width: 901px) { .manifesto__text { max-width: min(1180px, 68vw); } }
-.pic--b { width: min(28vw, 420px); left: 3vw; bottom: -4%; aspect-ratio: 3/2; opacity: .85; }
+/* one row of photos under the sentences; on phones it scrolls sideways */
+.manifesto__row { display: grid; grid-template-columns: repeat(6, 1fr); gap: clamp(10px, 1.2vw, 18px); max-width: var(--max); margin: clamp(56px, 7vw, 100px) auto 0; padding: 0 var(--pad); }
+.manifesto__ph { margin: 0; aspect-ratio: 4/5; border-radius: 16px; overflow: hidden; box-shadow: 0 30px 60px -30px rgba(0, 0, 0, .7); }
+.manifesto__ph picture, .manifesto__ph img { display: block; width: 100%; height: 100%; object-fit: cover; }
+@media (max-width: 900px) {
+  .manifesto__row { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; gap: 12px; }
+  .manifesto__row::-webkit-scrollbar { display: none; }
+  .manifesto__ph { flex: 0 0 42vw; scroll-snap-align: start; }
+}
 
 /* ----------------------------------------------------------------- stats */
 .stats { position: relative; padding: 90px 0; background: var(--deep); overflow: hidden; }
 .stats__lanes { position: absolute; inset: 0; display: grid; grid-template-columns: repeat(4, 1fr); }
 .stats__lanes i { border-left: 1px solid var(--line); position: relative; }
 .stats__lanes i::before { content: ""; position: absolute; left: 50%; top: 0; bottom: 0; width: 6px; margin-left: -3px; background: linear-gradient(180deg, transparent, rgba(10, 139, 208, .35) 15%, rgba(10, 139, 208, .35) 85%, transparent); opacity: .5; }
-.stats__grid { position: relative; display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; }
-.stat { padding: 10px 28px 10px 0; }
+/* full page width: each number sits in its own lane of the background */
+.stats__grid.wrap { position: relative; display: grid; grid-template-columns: repeat(4, 1fr); gap: 56px 0; max-width: none; padding-inline: 0; }
+.stat { padding: 10px clamp(20px, 3.4vw, 64px); }
 .stat__n { display: block; font: 700 clamp(56px, 7.4vw, 120px)/1 var(--f-display); letter-spacing: -.05em; }
 .stat__n sup { font-size: .4em; vertical-align: .9em; margin-left: 2px; }
 .stat__l { display: block; max-width: 240px; margin-top: 14px; color: var(--muted); font-size: 15px; line-height: 1.45; }
@@ -294,7 +308,7 @@ em { font-family: var(--f-serif); font-style: italic; font-weight: 400; letter-s
 .coaches .eyebrow { color: var(--pool); }
 .coaches .h2 em { color: var(--pink); }
 .olympian { display: grid; grid-template-columns: 1fr 1.05fr; gap: clamp(40px, 6vw, 100px); align-items: center; margin-top: clamp(70px, 9vw, 120px); }
-.olympian__kicker { margin: 0 0 14px; font: 600 13px/1 var(--f-body); letter-spacing: .18em; text-transform: uppercase; color: var(--pink); }
+.olympian__kicker { margin: 0 0 18px; font: 600 24px/1.1 var(--f-body); letter-spacing: .12em; text-transform: uppercase; color: var(--pink); }
 .olympian__title { margin: 0 0 24px; font: 700 clamp(44px, 5.6vw, 88px)/.95 var(--f-display); letter-spacing: -.045em; }
 .olympian__copy p:not(.olympian__kicker) { color: #3b4058; max-width: 520px; }
 .olympian__board { background: var(--ink); color: var(--paper); border-radius: 22px; padding: 30px; box-shadow: 0 50px 80px -40px rgba(11, 16, 35, .55); position: relative; overflow: hidden; }
@@ -313,6 +327,24 @@ em { font-family: var(--f-serif); font-style: italic; font-weight: 400; letter-s
 .record__copy h3 { margin: 0 0 18px; font: 700 clamp(30px, 3.2vw, 48px)/1.02 var(--f-display); letter-spacing: -.035em; }
 .record__copy p:not(.olympian__kicker) { color: #3b4058; }
 
+/* Elsa and Ana: same build as João Santos (copy + a dark board), Ana's mirrored */
+.coach { display: grid; grid-template-columns: 1fr 1.05fr; gap: clamp(40px, 6vw, 100px); align-items: center; margin-top: clamp(100px, 12vw, 170px); }
+.coach--flip .coach__copy { order: 2; }
+.coach__title { margin: 0 0 24px; font: 700 clamp(44px, 5.6vw, 88px)/.95 var(--f-display); letter-spacing: -.045em; }
+.coach__copy p:not(.olympian__kicker) { color: #3b4058; max-width: 520px; }
+.facts { margin: 0; background: var(--ink); color: var(--paper); border-radius: 22px; padding: 14px 30px; box-shadow: 0 50px 80px -40px rgba(11, 16, 35, .55); }
+.facts__row { display: grid; grid-template-columns: 9em 1fr; gap: 16px; align-items: baseline; padding: 22px 6px; border-bottom: 1px solid var(--line); }
+.facts__row:last-child { border-bottom: 0; }
+.facts dt { font: 600 12px/1 var(--f-body); letter-spacing: .16em; text-transform: uppercase; color: var(--aqua); }
+.facts dd { margin: 0; font: 600 clamp(20px, 2vw, 28px)/1.15 var(--f-display); letter-spacing: -.02em; }
+/* text still to be written: clearly marked so it is not mistaken for final copy */
+.tbd { padding: 14px 18px; border: 1.5px dashed rgba(255, 61, 127, .55); border-radius: 12px; font-style: italic; }
+.coach__copy p.tbd { color: #8a3a5a; }
+.facts dd.tbd-inline { color: rgba(243, 240, 232, .45); font-style: italic; font-weight: 400; }
+.olympian, .record, .coach { scroll-margin-top: 110px; }
+.staff__go { display: inline-block; margin-left: .35em; font-size: .6em; vertical-align: .35em; opacity: 0; transition: opacity .3s; }
+.staff__list a { color: inherit; text-decoration: none; }
+.staff__list li:hover .staff__go, .staff__list a:focus-visible .staff__go { opacity: 1; }
 .staff { display: grid; grid-template-columns: 1.4fr 1fr; gap: clamp(30px, 5vw, 80px); align-items: center; margin-top: clamp(100px, 12vw, 170px); }
 .staff__photo { margin: 0; border-radius: 22px; overflow: hidden; aspect-ratio: 16/9; }
 .staff__list { list-style: none; margin: 0; padding: 0; }
@@ -359,9 +391,11 @@ em { font-family: var(--f-serif); font-style: italic; font-weight: 400; letter-s
 .family__head .h2 { font-size: clamp(36px, 5vw, 80px); max-width: 1100px; }
 .reel { overflow: hidden; margin-bottom: 16px; }
 .reel__track { display: flex; gap: 16px; width: max-content; will-change: transform; }
-.reel__img { flex: 0 0 auto; height: clamp(200px, 22vw, 340px); border-radius: 16px; overflow: hidden; }
+.reel__img { flex: 0 0 auto; height: clamp(150px, 17vw, 260px); border-radius: 16px; overflow: hidden; }
 .reel__img img { width: auto; height: 100%; }
-.quotes { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top: 90px; }
+.family__story { margin: clamp(70px, 8vw, 110px) 0 0; max-width: 1080px; font: 600 clamp(22px, 2.6vw, 40px)/1.25 var(--f-display); letter-spacing: -.02em; color: var(--paper); text-wrap: pretty; }
+.family__story em { font: italic 400 1.08em/1 var(--f-serif); letter-spacing: 0; color: var(--pink-2); }
+.quotes { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top: clamp(60px, 7vw, 90px); }
 .quotes blockquote { margin: 0; padding-top: 28px; border-top: 1px solid var(--line); }
 .quotes p { margin: 0 0 16px; font: 400 clamp(24px, 2.4vw, 36px)/1.2 var(--f-serif); font-style: italic; }
 .quotes cite { font-style: normal; font-size: 14px; color: var(--muted); }
@@ -398,7 +432,7 @@ em { font-family: var(--f-serif); font-style: italic; font-weight: 400; letter-s
 /* ----------------------------------------------------------------- reveal helpers */
 /* Only hide things (loader, reveals) when JS runs, so the page never gets stuck. */
 .js .reveal { opacity: 0; transform: translateY(40px); }
-.js .loader { display: grid; animation: loader-failsafe .6s 9s forwards; }
+.js .loader { display: grid; animation: loader-failsafe .6s 13s forwards; }  /* after the GSAP exit (~9 s) */
 @keyframes loader-failsafe { to { opacity: 0; visibility: hidden; } }
 
 /* ----------------------------------------------------------------- responsive */
@@ -406,33 +440,35 @@ em { font-family: var(--f-serif); font-style: italic; font-weight: 400; letter-s
   .nav__links { display: none; }
   .nav__cta { display: none; }
   .nav__burger { display: block; }
-  .stats__grid { grid-template-columns: repeat(2, 1fr); row-gap: 50px; }
+  .stats__grid.wrap { grid-template-columns: repeat(2, 1fr); row-gap: 64px; }
   .stats__lanes { grid-template-columns: repeat(2, 1fr); }
 }
 @media (max-width: 900px) {
   body { font-size: 16px; }
   .hero__foot { flex-direction: column; align-items: flex-start; }
   .hero__scroll { display: none; }
-  .manifesto__pics { position: static; display: grid; grid-template-columns: 1fr 1fr; gap: 14px; padding: 60px var(--pad) 0; }
-  .pic { position: relative; inset: auto; width: auto; opacity: 1; }
   .journey__pin { min-height: 0; }
   .journey__track { flex-direction: column; width: auto; background: none; gap: 50px; border-left: 2px dashed rgba(255, 61, 127, .6); margin-left: var(--pad); padding-inline: 0 var(--pad); }
   .lap { width: auto; padding: 0 0 0 28px; }
   .lap::before { left: -11px; top: 6px; }
   .lap__year { position: static; display: block; margin-bottom: 10px; }
   .lap--more { padding-left: 28px; }
-  .olympian, .record, .staff, .cap__grid, .join__grid, .quotes { grid-template-columns: 1fr; }
+  .olympian, .record, .coach, .staff, .cap__grid, .join__grid, .quotes { grid-template-columns: 1fr; }
+  .coach--flip .coach__copy { order: 0; }
+  .facts { padding: 6px 18px; }
+  .facts__row { grid-template-columns: 1fr; gap: 8px; padding: 16px 4px; }
   .board__head, .board__row { grid-template-columns: 1.2fr 1.2fr .9fr .5fr; font-size: 14px; }
   .board__row .mono { font-size: 20px; }
   .bento { grid-template-columns: 1fr; }
   .tile, .tile--xl { grid-column: auto; grid-row: auto; min-height: 340px; }
+  .tile--xl { min-height: 0; aspect-ratio: 1; }  /* the team photo is square: keep everyone in */
   .foot__grid { grid-template-columns: 1fr 1fr; }
   .cap__stage { order: -1; }
 }
 @media (max-width: 560px) {
   .hero__inner { padding-bottom: 110px; }
   .btn { height: 54px; padding: 0 22px; font-size: 15px; }
-  .stats__grid { grid-template-columns: 1fr 1fr; }
+  .stats__grid.wrap { grid-template-columns: 1fr 1fr; }
   .stat { padding-right: 12px; }
   .olympian__board { padding: 18px; }
   .board__head { display: none; }
@@ -626,3 +662,59 @@ html:not(.js) .reel, .no-motion .reel { overflow-x: auto; }
   .lap p { margin-bottom: 14px; min-height: 0; }
   .lap__img { aspect-ratio: 2.3/1; }
 }
+
+/* palmarés: a light text tile (Laura Estevens), no photo */
+.tile--light { background: var(--paper); color: var(--ink); }
+.tile--light::after { display: none; }
+.tile--light p { color: #3b4058; }
+.tile--light .tile__tag { background: rgba(11, 16, 35, .08); }
+.tile--light .tile__big { color: var(--pink); }
+
+/* João Duarte Santos: foto por baixo do recorde */
+.record__photo { margin: clamp(28px, 3vw, 44px) 0 0; width: min(100%, 360px); transform: rotate(-2deg); }
+.record__photo picture, .record__photo img { display: block; width: 100%; height: auto; border-radius: 18px; }
+.record__photo img { box-shadow: 0 24px 50px -24px rgba(11, 27, 43, .45); }
+@media (max-width: 900px) { .record__photo { width: min(78%, 320px); } }
+
+/* História: todos os atletas, nomes seguidos de ponta a ponta */
+.roll__count { margin: 18px 0 0; color: var(--muted); font-size: 18px; }
+.roll__names { margin: clamp(40px, 5vw, 70px) 0 0; padding: 0 var(--pad); text-align: justify; text-align-last: center; font: 500 clamp(17px, 1.55vw, 24px)/2 var(--f-display); letter-spacing: -.01em; color: var(--paper); }
+.roll__name { display: inline-block; white-space: nowrap; }
+.roll__dot { display: inline-block; margin: 0 .55em; color: var(--pink-2); font-size: .7em; vertical-align: .12em; }
+.roll__note { margin-top: clamp(30px, 4vw, 50px); color: var(--muted); font-size: 14px; }
+@media (max-width: 600px) { .roll__names { font-size: 16px; line-height: 1.85; text-align: center; } .roll__dot { margin: 0 .4em; } }
+.olympian__photo { width: min(100%, 300px); transform: rotate(2deg); }
+@media (max-width: 900px) { .olympian__photo { width: min(70%, 280px); } }
+.coach__photo { width: min(100%, 300px); }
+@media (max-width: 900px) { .coach__photo { width: min(70%, 280px); } }
+.card__photo { margin: -30px -30px 26px; aspect-ratio: 1; overflow: hidden; border-radius: 19px 19px 0 0; }
+.card__photo picture, .card__photo img { display: block; width: 100%; height: 100%; object-fit: cover; }
+/* Laura's podium photo: keep her face clear of the big "2×" */
+.tile--laura .tile__img img { object-position: 50% 0%; }
+.tile--laura .tile__big { font-size: clamp(64px, 6vw, 100px); margin-bottom: 10px; color: var(--night); }
+.tile--laura::after { background: linear-gradient(180deg, transparent 15%, rgba(6, 10, 28, .92) 62%); }
+/* ProCoders PT card at the very end of the footer */
+.studio { display: flex; align-items: center; gap: clamp(16px, 2.4vw, 30px); margin-top: 28px; padding: 18px clamp(18px, 2.4vw, 28px); border-radius: 20px; background: rgba(243, 240, 232, .04); border: 1px solid var(--line); color: var(--paper); transition: border-color .4s, background .4s, transform .6s var(--ease); }
+.studio:hover { border-color: rgba(29, 255, 220, .45); background: rgba(29, 255, 220, .05); transform: translateY(-3px); }
+.studio__logo { flex: 0 0 auto; width: clamp(96px, 9vw, 128px); height: auto; }
+.studio__text { display: flex; flex-direction: column; gap: 3px; min-width: 0; }
+.studio__kicker { font: 600 11px/1 var(--f-body); letter-spacing: .12em; text-transform: uppercase; color: var(--muted); }
+.studio__name { font: 700 clamp(20px, 1.8vw, 26px)/1.1 var(--f-display); letter-spacing: -.02em; }
+.studio__desc { font-size: 14px; color: var(--muted); max-width: 560px; }
+.studio__go { margin-left: auto; flex: 0 0 auto; padding: 10px 16px; border-radius: 999px; border: 1px solid rgba(29, 255, 220, .5); color: #1DFFDC; font: 600 13px/1 var(--f-body); white-space: nowrap; }
+.studio:hover .studio__go { background: #1DFFDC; color: var(--night); }
+@media (max-width: 700px) {
+  .studio { flex-wrap: wrap; }
+  .studio__go { margin-left: 0; }
+}
+.studio + .studio { margin-top: 12px; }
+.studio__logo--app { width: clamp(56px, 5vw, 72px); margin-inline: clamp(20px, 2vw, 28px); }
+.studio--swim:hover { border-color: rgba(79, 209, 245, .45); background: rgba(79, 209, 245, .05); }
+.studio--swim .studio__go { border-color: rgba(79, 209, 245, .5); color: #4fd1f5; }
+.studio--swim:hover .studio__go { background: #4fd1f5; color: var(--night); }
+/* small phones: keep section labels on one line, and give the photo strip its side margin */
+@media (max-width: 400px) {
+  .eyebrow { font-size: 15px; letter-spacing: .12em; gap: 10px; }
+  .eyebrow .num::after { width: 18px; margin-left: 8px; }
+}
+@media (max-width: 900px) { .manifesto__row { scroll-padding-inline: var(--pad); } }

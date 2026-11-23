@@ -7,7 +7,7 @@ from receita import R
 
 OUT = "/Users/vicentevaz/Documents/GitHub/cno/fotos/web"
 WIDTHS = [480, 960, 1600, 2400]
-RATIOS = {"3:2": 1.5, "4:3": 4 / 3, "16:9": 16 / 9, "4:5": .8, "1:1": 1.0}
+RATIOS = {"3:2": 1.5, "4:3": 4 / 3, "16:9": 16 / 9, "16:10": 1.6, "23:10": 2.3, "9:8": 1.125, "4:5": .8, "1:1": 1.0}
 
 def crop_box(W, H, ratio, cx, cy, s):
     r = RATIOS[ratio]
@@ -88,8 +88,13 @@ def main(only=None):
             entry["recortes"].append({"proporcao": ratio, "tamanhos": files})
         manifest.append(entry)
         print(name, [(c["proporcao"], c["tamanhos"][-1]["w"]) for c in entry["recortes"]], flush=True)
-    if not only:
-        json.dump(manifest, open(os.path.join(OUT, "fotos.json"), "w"), ensure_ascii=False, indent=1)
+    path = os.path.join(OUT, "fotos.json")
+    if only:  # atualiza só estas entradas no manifesto existente, pela ordem da receita
+        novas = {e["nome"]: e for e in manifest}
+        antigo = {e["nome"]: e for e in json.load(open(path))}
+        antigo.update(novas)
+        manifest = [antigo[n] for _, n, *_ in R if n in antigo]
+    json.dump(manifest, open(path, "w"), ensure_ascii=False, indent=1)
 
 if __name__ == "__main__":
     main(sys.argv[1:] or None)

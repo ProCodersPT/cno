@@ -57,7 +57,7 @@
  {
   "nome": "bloco-touca-branca",
   "origem": "o:IMG_2952",
-  "alt": "Nadador sentado no bloco de partida, concentrado antes da prova",
+  "alt": "João Duarte Santos sentado no bloco de partida, concentrado antes da prova",
   "credito": "AmoNadar",
   "recortes": [
    {
@@ -251,6 +251,23 @@
      {
       "w": 1542,
       "h": 1928
+     }
+    ]
+   },
+   {
+    "proporcao": "9:8",
+    "tamanhos": [
+     {
+      "w": 480,
+      "h": 427
+     },
+     {
+      "w": 960,
+      "h": 854
+     },
+     {
+      "w": 1542,
+      "h": 1371
      }
     ]
    }
@@ -938,6 +955,23 @@
      {
       "w": 1200,
       "h": 1500
+     }
+    ]
+   },
+   {
+    "proporcao": "16:10",
+    "tamanhos": [
+     {
+      "w": 480,
+      "h": 300
+     },
+     {
+      "w": 960,
+      "h": 600
+     },
+     {
+      "w": 1200,
+      "h": 750
      }
     ]
    }
@@ -1772,6 +1806,237 @@
      {
       "w": 480,
       "h": 320
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "nome": "percurso-2005",
+  "origem": "o:bandeira-larga",
+  "alt": "A bandeira antiga do Clube de Natação de Olhão, fundado a 27 de setembro de 2005",
+  "credito": null,
+  "recortes": [
+   {
+    "proporcao": "23:10",
+    "tamanhos": [
+     {
+      "w": 480,
+      "h": 209
+     },
+     {
+      "w": 960,
+      "h": 417
+     },
+     {
+      "w": 1600,
+      "h": 696
+     },
+     {
+      "w": 2400,
+      "h": 1043
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "nome": "percurso-2009",
+  "origem": "o:mariposa-luis-mestre",
+  "alt": "Nadador de mariposa com a touca rosa do CNO entre salpicos",
+  "credito": "Luís Mestre / Algarve a Nadar",
+  "recortes": [
+   {
+    "proporcao": "16:10",
+    "tamanhos": [
+     {
+      "w": 480,
+      "h": 300
+     },
+     {
+      "w": 960,
+      "h": 601
+     },
+     {
+      "w": 1600,
+      "h": 1001
+     },
+     {
+      "w": 1848,
+      "h": 1156
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "nome": "percurso-2011",
+  "origem": "o:bancada-claque",
+  "alt": "Nadadores e treinadores do CNO de pé na bancada a apoiar a equipa",
+  "credito": null,
+  "recortes": [
+   {
+    "proporcao": "16:10",
+    "tamanhos": [
+     {
+      "w": 480,
+      "h": 300
+     },
+     {
+      "w": 720,
+      "h": 450
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "nome": "percurso-2012",
+  "origem": "o:medalheiro",
+  "alt": "Dezenas de medalhas de natação penduradas num medalheiro",
+  "credito": null,
+  "recortes": [
+   {
+    "proporcao": "16:10",
+    "tamanhos": [
+     {
+      "w": 480,
+      "h": 300
+     },
+     {
+      "w": 934,
+      "h": 584
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "nome": "percurso-2019",
+  "origem": "f:equipa-2019-capa",
+  "alt": "Equipa do Clube Natação de Olhão em 2019, com as t-shirts azuis do clube",
+  "credito": "Luís Mestre / Algarve a Nadar",
+  "recortes": [
+   {
+    "proporcao": "16:10",
+    "tamanhos": [
+     {
+      "w": 480,
+      "h": 300
+     },
+     {
+      "w": 648,
+      "h": 405
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "nome": "percurso-2021",
+  "origem": "o:equipa-bandeira-relvado",
+  "alt": "Equipa do CNO com a bandeira do clube num relvado, à noite",
+  "credito": null,
+  "recortes": [
+   {
+    "proporcao": "16:10",
+    "tamanhos": [
+     {
+      "w": 480,
+      "h": 300
+     },
+     {
+      "w": 643,
+      "h": 402
+     }
+    ]
+   },
+   {
+    "proporcao": "1:1",
+    "tamanhos": [
+     {
+      "w": 480,
+      "h": 480
+     },
+     {
+      "w": 640,
+      "h": 640
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "nome": "joao-santos-olimpico",
+  "origem": "o:joao-santos-olimpico",
+  "alt": "Retrato a preto e branco de João Santos, nadador olímpico, nos anos 80",
+  "credito": "Federação Portuguesa de Natação",
+  "recortes": [
+   {
+    "proporcao": "4:5",
+    "tamanhos": [
+     {
+      "w": 438,
+      "h": 548
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "nome": "elsa-sousa",
+  "origem": "o:elsa-sousa-2",
+  "alt": "Elsa Sousa, treinadora e fundadora do CNO, com a t-shirt azul do clube, ao lado de uma jovem nadadora junto à piscina",
+  "credito": null,
+  "recortes": [
+   {
+    "proporcao": "4:5",
+    "tamanhos": [
+     {
+      "w": 480,
+      "h": 600
+     },
+     {
+      "w": 799,
+      "h": 999
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "nome": "ana-sofia-nascimento",
+  "origem": "o:ana-sofia-nascimento",
+  "alt": "Ana Sofia Nascimento, treinadora do CNO, com a camisola do clube junto à piscina",
+  "credito": "Virgílio Afonso Photography / Algarve a Nadar",
+  "recortes": [
+   {
+    "proporcao": "4:5",
+    "tamanhos": [
+     {
+      "w": 256,
+      "h": 320
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "nome": "laura-estevens-podio",
+  "origem": "o:laura-estevens-podio",
+  "alt": "Laura Estevens no lugar mais alto do pódio, com a medalha ao peito e a bandeira do clube",
+  "credito": "Luís Mestre / Algarve a Nadar",
+  "recortes": [
+   {
+    "proporcao": "1:1",
+    "tamanhos": [
+     {
+      "w": 480,
+      "h": 481
+     },
+     {
+      "w": 579,
+      "h": 580
      }
     ]
    }

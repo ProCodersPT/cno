@@ -1,0 +1,182 @@
+# Atletas que representaram o Clube Natação de Olhão (fontes: resultados ANALG/FPN, live.swimrankings, imprensa).
+# Um nome por linha. Depois: python3 conteudo/gerar_atletas.py && python3 build.py
+
+Alice Serrão Marques
+Benjamim Rodrigues Duarte
+Duda Rodrigues Duarte
+Carolina Maria Oliveira
+Catarina Luz Pischel
+Dália Costa Ferradeira
+Diogo Filipe Cardoso
+Diogo Nascimento Faustino
+Duarte Fernandes Santos
+Duarte Jesus Tomé
+Elisa Martins Pescada
+Enzo Rodrigues Nunes
+Filiph Getmanskiy Lopes
+Gabriel José Santos
+Guilherme Salvador Conceição
+Helena Sofia Cristóvão
+Henrique Jesus Conceição
+Hugo Miguel Viegas
+Isabela Guerreiro Mendinhos
+Ivan Vazquez Macias   # a confirmar: N. 2008; aparece só na lista de inscritos do CN Clubes 2ª Div (28-29/11/2026), q
+Joana Brito Pereira
+João Duarte Santos
+João Nuno Valadas
+João Tomás Nunes
+José Tiago Mendes
+Lara Marina Santos
+Laura Beatriz Piteira
+Laura Silvestre Madeira
+Leonardo Sousa Patoleia
+Lia Serena Jesus
+Mar Mira Marquez
+Margarida Santos Jesus
+Maria Leonor Guerreiro
+Mariana Fernandes Santos
+Mariana Silva Rolão
+Mariana Sousa Fernandes
+Miguel Mourão Primo
+Nicole Isabela Ventura
+Pablo Mira Marquez
+Pedro Custódio Pinto
+Pedro Miguel Boavida
+Pedro Torrinha Monteiro
+Petra Rodrigues Duarte
+Raul Fernandez Roman
+Rodrigo Moura Manso
+Simão Charneca Soares
+Tiago Custódio Pinto
+Tiago Filipe Cardoso
+Tomás Oliveira Pires
+Vicente Henriques Vaz
+Victoria Paco Pires
+Ana Catarina Cavaco
+Carolina Maeiro Augusto
+Cláudia Ferreira Borges
+Laura Fabiana Estevens
+Mauro Filipe Viegas
+Miriam Filipe Marcos
+Rui Miguel Lopes
+Rafaela Marques Bodião
+Iolanda Marques Bodião
+André Sousa Gonçalves
+João Eduardo Ilha
+Tiago Jorge José
+Ricardo Jorge José
+Catarina Costa Fernandes
+Carolina Costa Fernandes   # a confirmar: N. 1999, a mesma data de nascimento de Catarina Costa Fernandes. Nadam a mesma p
+Mafalda Costa Fernandes
+Sara Filipe Marcos
+Miguel Duarte Pereira
+Tiago Miguel Pereira
+Catarina Alexandra Conceição
+Catarina Alexandra Cunha
+Bruno Manuel Viegas
+Joana Maria Saboia
+Tomás Miguel Valente
+Beatriz Sousa Valente
+Elisa Sauval Gonçalves
+Pablo Sauval Gonçalves
+Pedro Sousa Gonçalves
+Tomás Galvão Lourenço
+Catarina Rufino Madeira
+Leonor Santos Jesus
+Leandro Cuiça Pereira
+José Pedro Ferreira
+Inês João Mestre
+Miguel Ângelo Ferreira
+João Vieira Mendonça
+David Rodrigues Trindade
+Pedro Inácio Catarro
+Pedro Colaço Martins
+Mário Adriano Balanica
+Pedro Pereira Cruz
+André Santos Ramos
+Catarina Santos Ramos
+Catarina Correia Simões
+Joana Correia Simões
+Gonçalo Dias Nunes
+Guilherme Dias Nunes
+João Guilherme Graça
+João Miguel Virgínio
+Filipe Maria Ferreira   # a confirmar: N. 1995; só no blog regional, que transcrevia resultados nacionais ('Natação de 
+Joana Margarida Oliveira   # a confirmar: Só na imprensa: medalhada do CNO no Regional de 2015
+Ângelo Miranda Nascimento
+Joana Santos Parra
+# José Rodeia  -- falta nome completo (2020/21)
+Bárbara Leote Carmo
+Soner Tunay Hadzhilar
+Anatole Gallon
+David Martins Carmo
+Carlos Lima Marques
+Afonso Ferreira Duarte
+Gustavo Ferreira Duarte
+Ana Leonor Dias
+Bruno Daniel Jesus
+Daniel Alexandre Silva
+Daniel Filipe Dinis
+David Miguel Guerreiro
+Diogo Alexandre Batista
+Diogo Xavier Silva
+Felicia Birca
+Gonçalo Cabanita Cruz
+Gonçalo Miguel Sousa
+Joana Lopes Salgueiro
+João Miguel Boavida
+João André Silva
+Lia Costa Maria
+Lívia Ferreira Fernandes
+Nuno Ferreira Figenschou
+Nuno Filipe Carmo
+Raul Santiago Jesus
+Ricardo Ferreira Santos
+Afonso Samuel Silva   # a confirmar: N. 2007; aparece só em listas de partida de 2018 (DNS numa delas)
+Tomás Sousa Condinho   # a confirmar: N. 2007; aparece só em listas de partida de 2018
+Lourenço Manuel Mesquita   # a confirmar: N. 2007; aparece só numa lista de partida de 2018, marcado DNS
+Andreia Sofia Tomé
+Andreia Filipa Tavares
+David Alexandre Jesus
+David Rodrigues Berrueco
+Humberto Melo Salustiano
+Inês Branco Serra
+João Bento Rufino
+Miguel Ângelo Mestre
+Nicolau Pastor Henrique
+Nuno Filipe Magalhães
+Patrícia Ruivo Correia
+Renato Filipe Souza
+Teresa Carvalho Firmo
+Volodymyr Urshulyak
+Wilson Rafael Faria
+Nazar Babych   # SwimCloud: plantel do CNO 2023/24 (falta o nome do meio)
+
+# Acrescentados a 23/11/2026: resultados ANALG 2019/20-2022/23 (analgarve.com, ficheiros LXF)
+Alexandre Santos Pires   # 2019-2023
+André Serro Joaquim   # 2019-2023
+Beatriz Isabel Santos   # 2020-2023
+Bruno Alexandre Oliveira   # 2019-2020
+Carminho Escada Pólvora   # 2022-2023
+Cristóbal Vargas Trujillo   # 2023-2023
+Enzo Leon Coutinho   # 2021-2023
+Gabriela Escada Pólvora   # 2019-2022
+Gonçalo Alexandre Retre   # 2022-2022
+Gustavo Santos Feijão   # 2022-2023
+Hugo Cristian Duran Quesada   # 2023-2023
+Joana Sofia Brito   # 2021-2021
+João Quintas Conceição   # 2022-2023
+Lourenço Jorge Durão   # 2022-2023
+Lucas Martim Batista   # 2023-2023
+Maria Leonor Marques   # 2022-2023
+Matias José Nogueira   # 2022-2023
+Miguel Alexandre Santos   # 2019-2021
+Miguel Pérez Brageli   # 2021-2021
+Mónica Rita Silva   # 2021-2023
+Nicole Carrilho Sousa   # 2019-2022
+Núria Boavida Perruca   # 2019-2022
+Pedro Quintas Conceição   # 2022-2023
+Rodrigo Simão Dias   # 2022-2022
+Santiago Rodrigues Bernardo   # 2022-2022
+Sebastião Custódio Bondia   # 2022-2023
+Tomás Brito Pinheiro   # 2019-2020

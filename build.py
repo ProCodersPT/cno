@@ -39,7 +39,9 @@ def expand(html, page):
     html = INCLUDE.sub(lambda m: (ROOT / "src/partials" / f"{m[1]}.html").read_text(), html)
     html = html.replace("[[home]]", "" if page == "index.html" else "./")
     # version the stylesheet and the script by content, so visitors never get a stale cached copy
-    for asset in ("assets/css/style.css", "assets/js/main.js"):
+    # (the hero video too: fotos/web is cached for 30 days, so a re-cut would otherwise not reach returning visitors)
+    for asset in ("assets/css/style.css", "assets/js/main.js",
+                  *(f"fotos/web/video/mergulho-{m}{e}" for m in ("16x9", "9x16") for e in (".mp4", "-poster.jpg"))):
         v = hashlib.sha1((ROOT / asset).read_bytes()).hexdigest()[:8]
         html = html.replace(f'"{asset}"', f'"{asset}?v={v}"')
     return MACRO.sub(lambda m: picture(m[1], m[2], m[3], m[4] or "", bool(m[5])), html)

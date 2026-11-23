@@ -4,16 +4,22 @@ import subprocess, os, sys
 SRC = "/Users/vicentevaz/Documents/GitHub/cno/fotos/videos"
 OUT = "/Users/vicentevaz/Documents/GitHub/cno/fotos/web/video"
 os.makedirs(OUT, exist_ok=True)
-F = 0.5  # crossfade seconds
+F = 0.3  # crossfade seconds
 GRADE = "eq=contrast=1.06:saturation=1.08:gamma=0.98"
 
 # (clip, start, end, vertical centre for the 16:9 crop as a fraction of the portrait frame)
-MONTAGEM = [("IMG_2871", 1.0, 4.6, .45), ("IMG_2874", 0.8, 4.2, .45),
-            ("IMG_2876", 10.0, 13.5, .42), ("IMG_2877", 0.3, 3.0, .50)]
+# The user's own cuts (fotos/videos/recortados), used whole. Dives alternate with the
+# underwater swim-pasts so two swim-pasts never follow each other; 2877_2 and 2877_3
+# overlap (same swim), so they sit as far apart as the loop allows.
+MONTAGEM = [("recortados/IMG_2874_2", 0.0, 3.415, .42),   # dive
+            ("recortados/IMG_2877_2", 0.0, 5.963, .50),   # underwater swim-past
+            ("recortados/IMG_2871_2", 0.0, 1.985, .45),   # dive
+            ("recortados/IMG_2876_2", 0.0, 6.945, .42),   # underwater swim-past
+            ("recortados/IMG_2870_2", 0.0, 3.463, .45),   # dive down
+            ("recortados/IMG_2877_3", 0.0, 4.171, .50)]   # underwater swim-away
 CALMO = [("IMG_2870", 7.4, 13.4, .55)]
-# Horizontal crops lose the vertical dive, so desktop uses the horizontal moments.
-MONTAGEM_16x9 = [("IMG_2874", 0.6, 3.4, .40), ("IMG_2876", 10.2, 13.5, .42),
-                 ("IMG_2877", 0.3, 3.0, .50), ("IMG_2871", 2.4, 5.0, .60)]
+MONTAGEM_16x9 = MONTAGEM
+RATE = {"16x9": ("25", "4M"), "9x16": ("24", "2.5M")}  # crf, maxrate: keeps the longer loop light
 
 def build(name, segs, mode):
     inputs, chains = [], []
@@ -42,7 +48,7 @@ def build(name, segs, mode):
     fc = ";".join(chains)
     stem = os.path.join(OUT, f"{name}-{mode}")
     base = ["ffmpeg", "-v", "error", "-y", *inputs, "-filter_complex", fc, "-map", "[out]", "-an"]
-    subprocess.run(base + ["-c:v", "libx264", "-preset", "slow", "-crf", "22", "-maxrate", "6M" if mode == "16x9" else "3.5M",
+    subprocess.run(base + ["-c:v", "libx264", "-preset", "slow", "-crf", RATE[mode][0], "-maxrate", RATE[mode][1],
                            "-bufsize", "12M", "-profile:v", "high", "-tune", "film",
                            "-movflags", "+faststart", stem + ".mp4"], check=True)
     # AV1 tested: at equal visual quality it was larger than H.264 on this footage, so MP4 only.
@@ -55,4 +61,5 @@ def build(name, segs, mode):
 if __name__ == "__main__":
     for mode in ("16x9", "9x16"):
         build("mergulho", MONTAGEM_16x9 if mode == "16x9" else MONTAGEM, mode)
-        build("pistas-calmo", CALMO, mode)
+        if "--tudo" in sys.argv:
+            build("pistas-calmo", CALMO, mode)

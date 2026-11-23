@@ -11,6 +11,7 @@ Base de conteúdo para o site do CNO, recolhida a 17/11/2026. Cada facto tem a f
 ### Identidade
 - **Nome:** Clube Natação de Olhão. Siglas usadas: CNO e CNOL. Nas listas da FPN aparece como "Natacao Olhao".
 - **Fundação:** **27 de setembro de 2005**. É a data que o clube usa no FB ("13.º aniversário do C.N.O. 27-09-2018").
+- **Fundadores:** o nadador olímpico João Santos e Elsa Sousa (indicado pelo Vicente, novembro de 2026).
 - **20 anos em 2025:** publicação comemorativa no FB a 27/9/2025 e exposição "Clube de Natação de Olhão" na Galeria da Junta de Freguesia de Olhão, aberta até 31/10/2025.
 - **Casa:** Piscinas Municipais de Olhão, com tanque de competição de 25 × 16,67 m e 8 pistas ([CM Olhão](https://desporto.cm-olhao.pt/menu/1349/piscinas-municipais)).
 - **Contactos:**

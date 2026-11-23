@@ -64,10 +64,10 @@ for name in ("cno-simbolo.svg", "cno-logo-fundo-escuro.svg"):
 
 # ---- hero video
 vid = b64((OUT / "mergulho-movel.mp4").read_bytes(), "video/mp4")
-html = html.replace('poster="fotos/web/video/mergulho-16x9-poster.jpg"', f'poster="{poster_uri}"')
-html = html.replace('data-src-wide="fotos/web/video/mergulho-16x9.mp4"', 'data-src-wide=""')
-html = html.replace('data-src-tall="fotos/web/video/mergulho-9x16.mp4"', f'data-src-tall="{vid}"')
-html = html.replace('data-poster-tall="fotos/web/video/mergulho-9x16-poster.jpg"', "")
+html = re.sub(r'poster="fotos/web/video/mergulho-16x9-poster\.jpg[^"]*"', lambda m: f'poster="{poster_uri}"', html)
+html = re.sub(r'data-src-wide="fotos/web/video/mergulho-16x9\.mp4[^"]*"', 'data-src-wide=""', html)
+html = re.sub(r'data-src-tall="fotos/web/video/mergulho-9x16\.mp4[^"]*"', lambda m: f'data-src-tall="{vid}"', html)
+html = re.sub(r'data-poster-tall="fotos/web/video/mergulho-9x16-poster\.jpg[^"]*"', "", html)
 
 # ---- other pages are not in this file: point to sections here
 html = re.sub(r'href="historia\.html(#[^"]*)?"', 'href="#percurso"', html)

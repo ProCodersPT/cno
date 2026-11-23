@@ -9,13 +9,14 @@ AMONADAR = "AmoNadar"
 VIRGILIO = "Virgílio Afonso Photography / Algarve a Nadar"
 LUIS = "Luís Mestre / Algarve a Nadar"
 HOESEN = "Alexandra Hoesen Photo"
+FPN = "Federação Portuguesa de Natação"
 
 R = [
  # ---- fotos profissionais (topo / destaque)
  ("o:IMG_2949", "sair-da-piscina-touca-rosa", [("3:2", .5, .5, 1), ("4:5", .6, .5, 1), ("1:1", .6, .5, 1)], {}, AMONADAR,
   "Nadador do CNO com a touca rosa do clube a sair da piscina pela escada"),
  ("o:IMG_2952", "bloco-touca-branca", [("1:1", .5, .5, 1), ("4:5", .62, .5, 1)], {}, AMONADAR,
-  "Nadador sentado no bloco de partida, concentrado antes da prova"),
+  "João Duarte Santos sentado no bloco de partida, concentrado antes da prova"),
  ("o:IMG_2953", "concentracao-touca-rosa", [("1:1", .5, .5, 1), ("4:5", .5, .5, 1)], {}, AMONADAR,
   "Nadador com a touca rosa do CNO de cabeça baixa, a concentrar-se antes da prova"),
  ("o:IMG_6783", "mariposa-salpicos", [("1:1", .5, .5, 1), ("4:5", .5, .5, 1)], {}, AMONADAR,
@@ -23,7 +24,7 @@ R = [
  ("o:IMG_2947", "retrato-touca-rosa", [("3:2", .5, .5, 1), ("4:5", .52, .5, 1)], {}, AMONADAR,
   "Retrato de um nadador com a touca rosa do CNO e os óculos na testa"),
  # ---- história
- ("o:IMG_2944", "bandeira-historica", [("1:1", .5, .3, 1), ("4:5", .5, .36, 1)], {"wb": .5}, None,
+ ("o:IMG_2944", "bandeira-historica", [("1:1", .5, .3, 1), ("4:5", .5, .36, 1), ("9:8", .5, .3, 1)], {"wb": .5}, None,
   "A bandeira antiga do Clube de Natação de Olhão e uma fotografia de equipa antiga"),
  ("o:IMG_2946", "touca-antiga", [("1:1", .5, .35, 1), ("4:5", .5, .38, 1)], {"wb": .3}, None,
   "Touca rosa antiga com o logótipo e o nome C. N. Olhão"),
@@ -66,7 +67,7 @@ R = [
   "Equipa de infantis do CNO com as t-shirts azuis do clube"),
  ("o:IMG_2936", "equipa-piscina-exterior", [("3:2", .5, .55, 1), ("4:5", .5, .55, 1)], {}, None,
   "Equipa do CNO com um troféu junto a uma piscina ao ar livre"),
- ("o:IMG_2935", "equipa-trofeu-exterior", [("1:1", .5, .5, 1), ("4:5", .5, .5, 1)], {"wb": .4, "lift": .25, "exp": .2}, None,
+ ("o:IMG_2935", "equipa-trofeu-exterior", [("1:1", .5, .5, 1), ("4:5", .5, .5, 1), ("16:10", .5, .47, 1)], {"wb": .4, "lift": .25, "exp": .2}, None,
   "Equipa jovem do CNO a celebrar com um troféu"),
  ("o:IMG_2939", "equipa-palmeiras", [("3:2", .5, .55, 1), ("4:5", .5, .55, 1)], {"lift": .2}, None,
   "Equipa do CNO com os fatos de treino do clube, debaixo das palmeiras"),
@@ -126,4 +127,25 @@ R = [
  ("f:mariposa-touca-branca", "mariposa-touca-branca", [("3:2", .5, .5, 1)], {}, VIRGILIO, "Nadador de mariposa com touca branca"),
  ("f:medalhas", "medalhas", [("3:2", .5, .5, 1)], {}, VIRGILIO, "Medalhas com fitas verdes e vermelhas sobre uma mesa"),
  ("f:salto-de-partida", "salto-de-partida", [("3:2", .5, .5, 1)], {}, VIRGILIO, "Nadador a saltar do bloco de partida"),
+ # ---- percurso (02): fotos escolhidas pelo Vicente a 23/11/2026, recortadas para as molduras do percurso
+ ("o:bandeira-larga", "percurso-2005", [("23:10", .5, .5, 1)], {"wb": .5}, None,
+  "A bandeira antiga do Clube de Natação de Olhão, fundado a 27 de setembro de 2005"),
+ ("o:mariposa-luis-mestre", "percurso-2009", [("16:10", .55, .5, 1)], {}, LUIS,
+  "Nadador de mariposa com a touca rosa do CNO entre salpicos"),
+ ("o:bancada-claque", "percurso-2011", [("16:10", .5, .5, 1)], {}, None,
+  "Nadadores e treinadores do CNO de pé na bancada a apoiar a equipa"),
+ ("o:medalheiro", "percurso-2012", [("16:10", .5, .78, 1)], {}, None,
+  "Dezenas de medalhas de natação penduradas num medalheiro"),
+ ("f:equipa-2019-capa", "percurso-2019", [("16:10", .55, .52, .9)], {}, LUIS,
+  "Equipa do Clube Natação de Olhão em 2019, com as t-shirts azuis do clube"),
+ ("o:equipa-bandeira-relvado", "percurso-2021", [("16:10", .5, .66, 1), ("1:1", .5, .5, 1)], {}, None,
+  "Equipa do CNO com a bandeira do clube num relvado, à noite"),
+ ("o:joao-santos-olimpico", "joao-santos-olimpico", [("4:5", .5, .45, 1)], {}, FPN,
+  "Retrato a preto e branco de João Santos, nadador olímpico, nos anos 80"),
+ ("o:elsa-sousa-2", "elsa-sousa", [("4:5", .556, .498, .694)], {}, None,
+  "Elsa Sousa, treinadora e fundadora do CNO, com a t-shirt azul do clube, ao lado de uma jovem nadadora junto à piscina"),
+ ("o:ana-sofia-nascimento", "ana-sofia-nascimento", [("4:5", .5, .5, 1)], {}, VIRGILIO,
+  "Ana Sofia Nascimento, treinadora do CNO, com a camisola do clube junto à piscina"),
+ ("o:laura-estevens-podio", "laura-estevens-podio", [("1:1", .592, .548, .592)], {}, LUIS,
+  "Laura Estevens no lugar mais alto do pódio, com a medalha ao peito e a bandeira do clube"),
 ]

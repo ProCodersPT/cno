@@ -57,7 +57,10 @@
 
   /* ---------- manifesto: wrap words */
   $$(".js-words").forEach(el => {
-    el.innerHTML = el.textContent.trim().split(/\s+/).map(w => `<span class="w">${w}</span>`).join(" ");
+    // keeps the <br> line breaks of the source: each line is wrapped word by word
+    el.innerHTML = el.innerHTML.split(/(<br[^>]*>)/i)
+      .map((part, i) => i % 2 ? " " + part : part.replace(/<[^>]*>/g, "").trim().split(/\s+/).filter(Boolean).map(w => `<span class="w">${w}</span>`).join(" "))
+      .join("");
   });
 
   /* ---------- custom cursor */
@@ -165,7 +168,7 @@
       $$('a[href^="#"]').forEach(a => a.addEventListener("click", e => {
         const id = a.getAttribute("href"); if (id.length < 2) return;
         const target = $(id); if (!target) return;
-        e.preventDefault(); lenis.scrollTo(target, { offset: -20 });
+        e.preventDefault(); lenis.scrollTo(target, { offset: +(a.dataset.offset || -20) });
       }));
     }
     document.addEventListener("cno:menu", e => e.detail ? lenis?.stop() : lenis?.start());
@@ -175,7 +178,6 @@
       document.body.classList.remove("is-loading");
       gsap.from(".page-hero .split", { yPercent: 110, duration: 1.4, stagger: .08, ease: "expo.out", delay: .1 });
       gsap.from([".page-hero .eyebrow", ".page-hero__lead", ".page-hero__actions", ".page-hero__media"], { opacity: 0, y: 30, duration: 1.2, stagger: .08, ease: "expo.out", delay: .3 });
-      $$(".reveal").forEach(el => gsap.to(el, { opacity: 1, y: 0, duration: 1.1, ease: "expo.out", scrollTrigger: { trigger: el, start: "top 88%" } }));
     }
     if (hasLoader) lenis?.stop();
 
@@ -185,19 +187,21 @@
     /* The crest, the club name and "Aos seus lugares" come in with CSS (see .loader__*),
        so they show from the very first paint; GSAP drives the rope, the count and the exit. */
     const prog = { v: 0 };
+    const FILL = 7;           // seconds the rope and the count take to fill the lane
+    const X = FILL - 2;       // everything after the fill moves with it
     const tl = gsap.timeline({ defaults: { ease: "expo.out" } });
-    tl.to(".loader__rope", { scaleX: 1, duration: 2, ease: "power3.inOut" }, 0)
-      .to(prog, { v: 100, duration: 2, ease: "power2.inOut", onUpdate: () => counter.textContent = String(Math.round(prog.v)).padStart(2, "0") }, 0)
-      .to(".loader__water", { height: "125%", duration: 1.1, ease: "power3.in" }, 1.95)
-      .to(".loader", { yPercent: -100, duration: 1, ease: "expo.inOut" }, 2.85)
-      .add(() => { document.body.classList.remove("is-loading"); lenis?.start(); $(".loader")?.remove(); }, 3.7);
+    tl.to(".loader__rope", { scaleX: 1, duration: FILL, ease: "power3.inOut" }, 0)
+      .to(prog, { v: 100, duration: FILL, ease: "power2.inOut", onUpdate: () => counter.textContent = String(Math.round(prog.v)).padStart(2, "0") }, 0)
+      .to(".loader__water", { height: "125%", duration: 1.1, ease: "power3.in" }, X + 1.95)
+      .to(".loader", { yPercent: -100, duration: 1, ease: "expo.inOut" }, X + 2.85)
+      .add(() => { document.body.classList.remove("is-loading"); lenis?.start(); $(".loader")?.remove(); }, X + 3.7);
 
     /* hero intro */
     gsap.set(".hero__title .split", { yPercent: 110 });
-    tl.to(".hero__title .split", { yPercent: 0, duration: 1.5, stagger: .1 }, 3.15)
-      .from(".hero__video", { scale: 1.35, duration: 2.6, ease: "expo.out" }, 2.9)
-      .from([".hero__brand", ".hero__lead", ".hero__actions", ".hero__marquee", ".hero__scroll"], { opacity: 0, y: 24, duration: 1.2, stagger: .08 }, 3.3)
-      .from(".nav", { opacity: 0, duration: 1.2, clearProps: "opacity" }, 3.5);  // opacity only: the nav hides with a CSS transform
+    tl.to(".hero__title .split", { yPercent: 0, duration: 1.5, stagger: .1 }, X + 3.15)
+      .from(".hero__video", { scale: 1.35, duration: 2.6, ease: "expo.out" }, X + 2.9)
+      .from([".hero__brand", ".hero__lead", ".hero__actions", ".hero__marquee", ".hero__scroll"], { opacity: 0, y: 24, duration: 1.2, stagger: .08 }, X + 3.3)
+      .from(".nav", { opacity: 0, duration: 1.2, clearProps: "opacity" }, X + 3.5);  // opacity only: the nav hides with a CSS transform
 
     /* returning in the same session: same entrance, faster */
     let seen = false;
@@ -235,6 +239,7 @@
     });
 
     /* headings rise */
+    $$(".reveal").forEach(el => gsap.to(el, { opacity: 1, y: 0, duration: 1.1, ease: "expo.out", scrollTrigger: { trigger: el, start: "top 88%" } }));
     $$(".h2:not(.reveal)").forEach(h => gsap.from(h, { y: 60, opacity: 0, duration: 1.3, ease: "expo.out", scrollTrigger: { trigger: h, start: "top 85%" } }));
     $$(".eyebrow").forEach(h => gsap.from(h, { x: -20, opacity: 0, duration: 1, ease: "expo.out", scrollTrigger: { trigger: h, start: "top 90%" } }));
 
@@ -242,8 +247,10 @@
     gsap.from(".olympian__board .board__row", { x: 40, opacity: 0, duration: 1, stagger: .12, ease: "expo.out", scrollTrigger: { trigger: ".olympian__board", start: "top 75%" } });
     gsap.from(".olympian__title", { y: 60, opacity: 0, duration: 1.3, ease: "expo.out", scrollTrigger: { trigger: ".olympian", start: "top 75%" } });
     $$(".js-scramble").forEach(el => ScrollTrigger.create({ trigger: el, start: "top 80%", once: true, onEnter: () => scramble(el) }));
-    gsap.from(".staff__rise", { yPercent: 110, duration: 1.1, stagger: .08, ease: "expo.out", scrollTrigger: { trigger: ".staff__list", start: "top 80%" } });
-    gsap.from(".staff__photo", { clipPath: "inset(0 100% 0 0 round 22px)", duration: 1.6, ease: "expo.inOut", scrollTrigger: { trigger: ".staff", start: "top 75%" } });
+    $$(".coach").forEach(c => {
+      gsap.from(c.querySelector(".coach__title"), { y: 60, opacity: 0, duration: 1.3, ease: "expo.out", scrollTrigger: { trigger: c, start: "top 75%" } });
+      gsap.from(c.querySelectorAll(".facts__row"), { x: c.classList.contains("coach--flip") ? -40 : 40, opacity: 0, duration: 1, stagger: .12, ease: "expo.out", scrollTrigger: { trigger: c, start: "top 75%" } });
+    });
 
     /* bento */
     gsap.from(".tile", { y: 80, opacity: 0, duration: 1.2, stagger: .08, ease: "expo.out", scrollTrigger: { trigger: ".bento", start: "top 80%" } });
